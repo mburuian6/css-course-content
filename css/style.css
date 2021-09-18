@@ -1,0 +1,241 @@
+
+/* .google-link:link{
+	color: blue;
+ }
+
+.google-link:visited{
+	color: red;
+} */
+
+/* subsequent */
+/* h1 + a {
+	color:red;
+} */
+
+/* subsequent but same parent */
+/* a ~ p {
+	background-color: aliceblue;
+} */
+
+/* child: direct children */
+/* ul > li {
+	background-color: lightpink;
+} */
+
+/* descendant: children and grandchildren*/
+/* ul li {
+	background-color: lightyellow;
+} */
+
+
+/* elem[class=subtitle] */
+/* h2[class=subtitle]{
+	background-color: lightsteelblue;
+}  */
+
+
+/* colors & text & font */
+
+body {
+	background: linear-gradient(
+		to bottom, 
+		rgba(204,229,255),rgba(204,229,255,0.4)
+	);
+
+	text-align: justify;
+	font-size: 1.15em ;
+	/* font-family: Arial, Helvetica, sans-serif; */
+	font-family: "Lato", sans-serif;
+}
+
+#title {
+	color:rgb(186, 133, 9);
+	font-family: "sarabun";
+	/* font-weight:700; */
+}
+
+.subtitle {
+	color: rgb(179, 138, 62);
+}
+
+.link {
+	text-decoration: none;
+	text-transform: capitalize;
+	font-style: oblique;
+}
+
+/* background */
+
+#service-image {
+	height: 400px;
+	width: 70%;
+
+
+	/* background: url("../img/img-2.jpg") ; */
+	/* background-repeat: no-repeat; */
+
+	/* background: linear-gradient(
+		to right,
+		rgb(94,255,126), rgba(94,255,126,0)
+	); */
+
+	/* background: linear-gradient(
+		to bottom right,
+		rgb(94,255,126), rgba(94,255,126,0)
+	); */
+
+	/* background: linear-gradient(
+		160deg,
+		rgb(94,255,126), rgba(94,255,126,0)
+	);
+	background-size: cover; */
+
+	background: radial-gradient(
+		circle,
+		red 20%,blue 40%,green 50%
+	);
+}
+
+/* Layout */
+
+/* float and display */
+#about-us-image {
+	height: 300px;
+	width: 60vw;
+
+	border: 6px solid rgb(28, 28, 79);
+	padding: 5px 15px;
+	margin: 5px 15px;
+	float: right;
+}
+
+table {
+	/* display:none; */
+	/* display: inline-block; */
+}
+
+/* flexbox */
+.container {
+  background-color: rgb(250, 250, 250);
+  margin: 10px;
+  height: 300px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  justify-content: space-around; /*horizontal*/
+  align-items: center; /*vertical*/
+}
+
+.container-item {
+  background: rgb(36, 130, 39);
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  width: 70px;
+  line-height: 50px;
+  margin: 10px;
+
+}
+
+/* grid */
+.grid-container {
+	background-color: rgb(250, 250, 250);
+	margin: 10px;
+	height: 500px;
+
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto;
+	/*gap: 300px 150px;*/ /*row gap,column gap*/
+	/* justify-content: center; start,end,space-evenly */
+	/* align-content: center; */
+}
+
+.grid-item {
+	color: black;
+	font-size: 25px;
+	text-align: center;
+
+	width: 70px;
+	line-height: 40px;
+	margin: 10px;
+}
+
+/* transition */
+
+.submit-button {
+	margin: 20px 10px;
+	padding: 10px 15px;
+	border: none;
+	text-decoration: none;
+	font-family: "Lato", sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	color: white;
+	background: rgb(89, 150, 255);
+
+	-webkit-transition: all 300ms ease ;
+	-moz-transition: all 300ms ease ;
+	-o-transition: all 300ms ease ; 
+	/*attrib duration method delay*/
+}
+
+.submit-button:hover{
+	background: rgb(147, 187, 255);
+	padding: 20px 30px;
+	/* transform: translate(50px, 30px) ; */
+	/* transform: scale(1.5); */
+	/* transform: rotate(-45deg); */
+	/* transform: skewX(10deg); */
+	/* transform: skewY(10deg); */
+
+	/*scaleX,skewY,skewX,scaleY,translateX,translateY*/
+	transform: matrix(1.2, 0, 0.10,1.2,10,5);
+}
+
+/* animations */
+#about-me {
+	/* animation-name: translate-element;
+	animation-duration: 4s;
+	animation-timing-function: linear; */
+	/* animation-delay: 2s; */
+	/* animation-iteration-count: 2; <infinite> */
+	/* animation-direction: alternate; */
+
+	animation: translate-element 4s linear 0s 2 alternate;
+
+}
+
+
+
+@keyframes translate-element {
+	0% {
+		background: red;
+		transform: translate(0px, 0px) ;
+	}
+
+	50% {
+		background: yellow;
+		transform: translate(10px, 10px) ;
+	}
+
+	100% {
+		background: violet;
+		transform: translate(20px, 20px) ;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

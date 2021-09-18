@@ -1,0 +1,14 @@
+Tips:
+  - Layout(grid,flexbox etc), 
+      then Background Colors (Try some gradients in background)
+  - Title: Darker colors, Subtitles: Lighter colors, same scheme
+  - Use sans-serif fonts, (print in serif)
+  - Height - absolute, width: relative
+
+Resources:
+  - (Google) Color Picker
+  - (Google) Fonts
+
+
+
+
